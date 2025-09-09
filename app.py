@@ -8,7 +8,7 @@ import base64
 
 app = Flask(__name__)
 
-# Load dataset
+
 DATA_PATH = 'data/Sales_Dataset.csv'
 df = pd.read_csv(DATA_PATH)
 
@@ -46,14 +46,12 @@ def plot_category_distribution():
 
 @app.route('/')
 def index():
-    # Key metrics
     total_sales = df['Amount'].sum()
     total_profit = df['Profit'].sum()
     total_quantity = df['Quantity'].sum()
     top_category = df.groupby('Category')['Amount'].sum().idxmax()
     top_city = df.groupby('City')['Amount'].sum().idxmax()
 
-    # Charts
     monthly_sales_chart = plot_monthly_sales()
     category_chart = plot_category_distribution()
 
