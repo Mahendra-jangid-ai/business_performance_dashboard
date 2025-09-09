@@ -34,7 +34,7 @@ BUSINESS PERFORMANCE DASHBOARD/
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/business-dashboard.git
+   git clone [https://github.com/your-username/business-dashboard.git](https://github.com/Mahendra-jangid-ai/business_performance_dashboard)
    cd business-dashboard
 
 
